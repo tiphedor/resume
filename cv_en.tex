@@ -1,0 +1,151 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{pifont}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{noitemsep}
+
+
+\pagenumbering{gobble}
+
+\titleformat{\section}{\large\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{1em}{}
+
+% Section for experience
+\newcommand{\experience}[4]{%
+  \vspace{5pt}
+  \textbf{#2} \hfill \textbf{#3} \\
+  \textit{#1} \hfill \textit{#4} \\
+  \vspace{-10pt}
+}
+
+% Bullet points for tasks and achievements
+\newcommand{\bulletpoint}[1]{%
+  \begin{itemize}
+    \setlength\itemsep{-3pt}
+    \setlength{\topsep}{0pt}
+    \item #1
+  \end{itemize}
+}
+
+\newcommand{\cvsection}[1]{%
+  \section*{#1}
+    \vspace{-10pt}
+    \hrule
+    \vspace{10pt}
+}
+
+\begin{document}
+
+% Your header
+\textbf{\Huge Martin STEFFEN} \textit{(he / him)}
+
+\large{\href{mailto:mail@tiph.io}{mail@tiph.io} \ding{117} 00 33 6 23 88 36 13 \ding{117} \texttt{github.com/tiphedor} \ding{117} \texttt{tiph.io}}
+
+\vspace{10pt}
+\hrule
+\vspace{15pt}
+
+
+Software engineer with over five years of experience, known for adaptability and a strong passion for technology. Skilled in both front-end and back-end development, with additional expertise in cloud infrastructure, deployment, and automation. Comfortable working across diverse domains and always eager to learn and take on new challenges.
+
+\cvsection{Professional Experience}
+
+
+\experience{Senior full-stack developer}{Mindflow}{Feb 2023 - Feb 2025}{Fully-remote}
+
+Mindflow is a startup providing a no-code SaaS automation platform for the cybersecurity industry.
+
+\begin{itemize}
+    \item Contributed to end-to-end development of platform features as a full-stack developer
+    \begin{itemize}
+        \item Collaborated closely with product teams and customers on feature design and improvements
+        \item Developed front-end and back-end components, including automated unit/integration tests and manual QA.
+        \item Managed cloud infrastructure, optimizing resources, handling incidents, and controlling costs.
+    \end{itemize}
+    \item Played a key role in onboarding and mentoring developers through pair programming, code reviews, and training sessions.
+    \item Successfully led migration of the entire codebase to a monorepo architecture, significantly boosting team productivity and velocity.
+    \item \textbf{Tech stack}: TypeScript, React, GraphQL, AWS, CDK.
+\end{itemize}
+
+\experience{Frontend developer}{Energisme}{Feb 2022 - Feb 2023}{Fully-remote}
+
+Energisme manages a fleet of IoT devices dedicated to energy measurement, helping businesses and local governments reduce energy usage and carbon footprint.
+
+\begin{itemize}
+    \item Contributed to the development from scratch of an application ecosystem for collecting, visualizing, and leveraging energy measurement data.
+    \item Tackled challenges related to code reuse and differentiated deployments across multiple clients and contexts.
+    \item \textbf{Tech stack}: TypeScript, React, GraphQL, Azure, Java.
+\end{itemize}
+
+\experience{Frontend developer}{Bedrock Streaming}{Mar 2020 - Feb 2022}{Lyon, France}
+
+Bedrock provides a white-label streaming platform for television channels and SVOD/AVOD services.
+
+\begin{itemize}
+    \item Developed applications for smart TVs (Samsung Tizen, LG webOS, etc.), addressing platform-specific performance constraints and proprietary components.
+    \item Managed cloud infrastructure to support new requirements, resolve incidents, and optimize costs.
+    \item Initiated an R\&D project to enable remote control of the TV fleet — originally designed to facilitate operations during the pandemic.
+    \item \textbf{Tech stack}: JavaScript, React, Terraform, AWS.
+\end{itemize}
+
+
+\experience{Backend developer}{Michelin}{Jun 2019 - Feb 2020}{Lyon, France}
+
+Michelin operates over a hundred commercial websites across multiple brands, languages, and customer segments (B2B and B2C).
+
+\begin{itemize}
+    \item Contributed to the operation of this large-scale website factory, focusing on back-end development and extending and maintaining the Apostrophe CMS.
+    \item Worked within a multinational, multicultural team spread across three continents.
+    \item \textbf{Tech stack}: Node.js, MongoDB, Apostrophe CMS.
+\end{itemize}
+
+\experience{DevOps Internship}{Zenika}{Sep 2018 - Feb 2019}{Lyon, France}
+\vspace{-10pt}
+\begin{itemize}
+  \item Designed a reusable deployment stack, covering a full software development pipeline from Git repository to production environment.
+  \item The goal was to deliver a plug-and-play DevOps solution enabling production deployment in under 5 minutes.
+\end{itemize}
+
+\experience{Webmaster, developer}{MesBilles.fr}{2016 - Current}{Fully-remote}
+\vspace{-10pt}
+\begin{itemize}
+    \item Maintained and developed an e-commerce website initially built with PrestaShop.
+    \item Created custom PHP modules and adapted existing ones to meet business needs.
+    \item Improved SEO, accessibility, and site performance.
+    \item Led a full migration to Shopify in 2022.
+\end{itemize}
+
+\cvsection{Education}
+
+\experience{Peer-learning based coding program}{42 Paris}{2019}{}
+
+\experience{Bachelor's degree in Mathematics and Computer Science (French \enquote{Licence} equivalent)}{Polytech Lyon}{2016}{}
+
+\cvsection{Knowledge sharing}
+
+\begin{itemize}
+    \item \textbf{Training:} Alongside my client work, I have regularly delivered JavaScript training sessions — for both beginners and advanced developers — to diverse audiences ranging from younger students to corporate teams.
+    \item \textbf{Presentations:} I've presented my work on numerous occasions, including internal conferences at Zenika and public meetups, such as those organized by the Cloud Native Computing Foundation (CNCF).
+\end{itemize}
+
+
+
+\cvsection{Skills and Interests}
+
+\begin{itemize}
+  \item \textbf{Languages:} French (native), English (bilingual)
+  \item \textbf{Additional skills:} Strong IT culture and passion, self-directed learning, touch typing (120+ wpm), knowledge sharing and mentoring, agile methodologies
+  \item \textbf{Interests:} Electronics, 3D printing, urban planning, rail and other mass-transit transport systems, cycling and hiking.
+\end{itemize}
+
+\end{document}
