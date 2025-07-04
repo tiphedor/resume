@@ -41,13 +41,16 @@ jobs:
           options: -v ${{ github.workspace }}:/workspace
           run: |
             cd /workspace
-            pdflatex cv_en.tex
+            pdflatex martin-steffen-resume-english.tex
+            pdflatex martin-steffen-cv-francais.tex
 
       - name: Create the new release an upload the PDF
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.next_tag.outputs.tag }}
-          files: cv_en.pdf
+          files: |
+            martin-steffen-resume-english.pdf
+            martin-steffen-cv-francais.pdf
           name: ${{ steps.next_tag.outputs.tag }}
           body: "Oh look, a new version!"
         env:
