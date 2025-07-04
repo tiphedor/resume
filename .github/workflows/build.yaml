@@ -11,7 +11,6 @@ permissions:
 jobs:
   pdf_release:
     runs-on: ubuntu-latest
-    container: aergus/latex:2025-05-27
     steps:
       - uses: actions/checkout@v4
 
@@ -36,8 +35,13 @@ jobs:
             // Create a step output for the new version
             core.setOutput('tag', tag);
 
-      - name: Build the English PDF
-        run: pdflatex cv_en.tex
+      - uses: addnab/docker-run-action@v3
+        with:
+          image: aergus/latex:2025-05-27
+          options: -v ${{ github.workspace }}:/workspace
+          run: |
+            cd /workspace
+            pdflatex cv_en.tex
 
       - name: Create the new release an upload the PDF
         uses: softprops/action-gh-release@v2
