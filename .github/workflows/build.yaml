@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     container: blang/latex:ubuntu
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Compute the name of the next release
         id: next_tag
