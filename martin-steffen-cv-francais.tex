@@ -1,0 +1,153 @@
+
+\documentclass[11pt]{article}
+
+\usepackage[margin=1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{pifont}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{noitemsep}
+
+
+\pagenumbering{gobble}
+
+\titleformat{\section}{\large\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{1em}{}
+
+% Section for experience
+\newcommand{\experience}[4]{%
+  \vspace{5pt}
+  \textbf{#2} \hfill \textbf{#3} \\
+  \textit{#1} \hfill \textit{#4} \\
+  \vspace{-10pt}
+}
+
+% Bullet points for tasks and achievements
+\newcommand{\bulletpoint}[1]{%
+  \begin{itemize}
+    \setlength\itemsep{-3pt}
+    \setlength{\topsep}{0pt}
+    \item #1
+  \end{itemize}
+}
+
+\newcommand{\cvsection}[1]{%
+  \section*{#1}
+    \vspace{-10pt}
+    \hrule
+    \vspace{10pt}
+}
+
+\begin{document}
+
+% Your header
+\textbf{\Huge Martin STEFFEN} \textit{(il / lui)}
+
+\large{\href{mailto:mail@tiph.io}{mail@tiph.io} \ding{117} 06 23 88 36 13 \ding{117} \texttt{github.com/tiphedor} \ding{117} \texttt{tiph.io}}
+
+\vspace{10pt}
+\hrule
+\vspace{15pt}
+
+
+Développeur Fullstack avec plus de cinq ans d'expérience, je suis passionné et polyvalent. Fort d'une grande capacité d'adaptation, je suis reconnu pour mon expertise en développement front-end et back-end, ainsi qu'en cloud, le tout dans des domaines d'application variés.
+
+\cvsection{Expériences professionnelles}
+
+\experience{Développeur Fullstack Senior}{Mindflow}{Fév 2023 - Fév 2025}{Full-remote}
+
+
+Mindflow est une start-up proposant une solution SaaS d'automatisation no-code destinée au monde de la cybersécurité.
+
+\begin{itemize}
+    \item En tant que développeur fullstack, j'étais responsable de la réalisation complète des fonctionnalités de la plateforme
+    \begin{itemize}
+        \item Collaboration avec les équipes produit et les clients sur la conception et les améliorations
+        \item Écriture du code de nouvelles fonctionnalités, du front au back, y compris les tests automatiques et manuels
+        \item Intervention sur l'infrastructure cloud pour les nouveaux besoins, la résolution d'incidents et la limitation des coûts
+    \end{itemize}
+    \item J'étais fortement impliqué dans les processus d'onboarding et dans l'accompagnement de la montée en compétences des autres développeurs (pair-programming, code review, mentorat, etc.)
+    \item J'ai été responsable de la migration de la codebase vers un monorepo, un chantier sur plusieurs mois, qui a permis à mon équipe de gagner en productivité et en vélocité
+    \item \textbf{Stack technique}: TypeScript, React, GraphQL, AWS, CDK.
+\end{itemize}
+
+\experience{Développeur Front}{Energisme}{Fév 2022 - Fév 2023}{Full-remote}
+
+Energisme gère une flotte d'appareils IoT dédiés à la mesure énergétique, dans une optique de sobriété et de réduction de l'empreinte carbone des entreprises et collectivités locales.
+
+\begin{itemize}
+    \item J'ai participé à la création from scratch d'un écosystème applicatif de collecte, visualisation et exploitation de données issues des mesures.
+    \item Forte problématique de réutilisation de code et de déploiement différencié
+    \item \textbf{Stack technique}: TypeScript, React, GraphQL, Azure, Java.
+\end{itemize}
+
+\experience{Développeur Front}{Bedrock Streaming}{Mar 2020 - Fév 2022}{Lyon, France}
+
+Bedrock propose en marque blanche une plateforme de streaming à des chaînes de télévision et plateformes de SVOD / AVOD
+
+\begin{itemize}
+    \item Je travaillais à la création des applications pour télévisions connectées (Samsung Tizen, LG WebOs, etc.), et leurs problématiques spécifiques de performances et de composantes propriétaires
+    \item Gestion de l'infrastructure cloud pour répondre aux nouveaux besoins, résoudre les incidents et optimiser les coûts
+    \item J'ai été à l'origine d'un projet de R\&D qui consistait à contrôler à distance le parc de TV, initialement pour faciliter le travail lors de la pandémie
+    \item \textbf{Stack technique}: JavaScript, React, Terraform, AWS.
+\end{itemize}
+
+
+\experience{Développeur Backend}{Michelin}{Jui 2019 - Fév 2020}{Lyon, France}
+
+Michelin opère une centaine de sites commerciaux, pour ses clients particuliers et professionnels, dans de nombreuses langues et au travers de ses nombreuses marques.
+
+\begin{itemize}
+    \item Je participais au fonctionnement de cette usine à sites, en intervenant sur la partie back, notamment via des évolutions du CMS Apostrophe.
+    \item Nous étions une équipe multinationale et multiculturelle travaillant presque exclusivement en anglais
+    \item \textbf{Stack technique}: Node.js, MongoDB, Apostrophe CMS.
+\end{itemize}
+
+\experience{Stagiaire DevOps}{Zenika}{Sep 2018 - Fév 2019}{Lyon, France}
+\vspace{-10pt}
+\begin{itemize}
+  \item Création d'une stack de déploiement réutilisable, allant du dépôt Git à l'application en production. L'idée était de proposer une solution clés en mains permettant de satisfaire tous les besoins DevOps d'une entreprise avec un déploiement en 5 minutes.
+\end{itemize}
+
+\experience{Webmaster, développeur}{MesBilles.fr}{2016 - Actuel}{Full-remote}
+\vspace{-10pt}
+\begin{itemize}
+    \item Développeur et mainteneur d'un site de e-commerce basé sur Prestashop
+    \begin{itemize}
+      \item Développement en PHP de nouveaux modules et adaptation de modules existants
+      \item Travail sur le SEO, l'accessibilité et la rapidité du site
+    \end{itemize}
+    \item Migration complète en 2022 sur Shopify
+\end{itemize}
+
+\cvsection{Éducation}
+
+\experience{Formation au code en peer-learning}{42 Paris}{2019}{}
+
+\experience{Licence Mathématiques et informatique}{Polytech Lyon}{2016}{}
+
+\cvsection{Partage de Connaissances}
+
+\begin{itemize}
+    \item \textbf{Formations:} En parallèle de mes missions en clientèle, j'ai donné à plusieurs reprises des formations sur JavaScript, pour débutants et confirmés, à des publics variés, allant de jeunes en formation à des équipes d'entreprises.
+    \item \textbf{Présentations:} À de nombreuses reprises, j'ai eu le plaisir de pouvoir partager mes réalisations devant des publics, notamment lors de conférences internes à Zenika, mais également lors de meetups, par exemple avec le CNCF.
+\end{itemize}
+
+
+
+\cvsection{Compétences, centres d'intérêts}
+
+\begin{itemize}
+  \item \textbf{Langues:} Français (natif), Anglais (bilingue)
+  \item \textbf{Compétences diverses:} Culture et passion pour l'informatique, apprentissage autonome, dactylographie (120+ mpm), pédagogie, méthodes agiles
+  \item \textbf{Centres d'intérêts} Électronique, impression 3D, urbanisme et systèmes ferroviaires, cyclisme et randonnée.
+\end{itemize}
+
+\end{document}
